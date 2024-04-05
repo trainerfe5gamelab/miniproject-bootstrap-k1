@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LINK BOOSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!--LINK FONTAWESOME-->
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    
+    <!--LINK GOOGLE FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    
+    <!--LINK CSS-->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light custom-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">
+                <img src="/img/logo ayam bakar.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testi">Testimoni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FaQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="toggle-cart-btn" href="#"><i class="fa-solid fa-cart-shopping fa-beat"
+                            style="color: #000000;"></i></i></a>
+                    
+                      <!-- Your shopping cart dropdown -->
+    <div id="shopping-cart" class="shopping-cart-container">
+        <table id="cart-content">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <p class="total-container" id="total-price"></p>
+
+        <form id="order-form">
+            <h2 class="form-title">Order Form</h2>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    pattern="[0-9]{10}"
+                    required
+                />
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description"></textarea>
+            </div>
+        </form>
+        <a href="#" id="checkout-btn" class="cart-btn">Checkout</a>
+        <a href="#" id="clear-cart" class="cart-btn">Clear Cart</a>
+    </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End Navbar-->
+
+    <!--Home-->
+    <div class="second" id="home">
+        <div class="bg-gambar">
+            <img src="/img/bg gambar.jpg" alt="">
+        </div>
+            <div class="container induk">
+            <div class="row custom-section">
+                <div class="col-12 col-lg-4">
+                    <h1>AYAM BAKAR SUHARSIH</h1>
+                    <h5>Rasa nikmat dengan harga merakyat.</h5>
+                </div>
+            </div>
+            <div class="img">
+                <img src="/img/logo ayam bakar.png">
+            </div>
+        </div>
+        <div class="icon-faq">
+            <i class="fa-solid fa-question" style="color: #ffffff;"></i>
+        </div>
+    </div>
+    <!--End Home-->
+
+    <!--About-->
+    <div class="container heading-about" id="about">
+      <h1 class="abouutt">About Us</h1>
+      <p>Ayam Bakar Suharsih adalah ayam bakar yang menyediakan menu dengan harga merakyat.</p>
+    </div>
+    
+    <div class="container container-about">
+      <section class="row about">
+        <div class="col-md-6 about-image">
+          <img src="img/IMG-20240320-WA0028.jpg" alt="" class="img-fluid image">
+        </div>
+        <div class="col-md-6 about-content">
+          <h2><b>Ayam Bakar Suharsih</b></h2>
+          <p>Selamat datang di Ayam Bakar Suharsih, destinasi utama Anda untuk cita rasa autentik ayam bakar yang lezat dan memikat. Kami adalah tempat yang berkomitmen untuk menyajikan hidangan yang menggugah selera dengan menggunakan bahan-bahan berkualitas tinggi dan resep warisan yang telah teruji.</p>
+          <button class="btn btn-primary read-more">Baca Selengkapnya</button>
+        </div>
+      </section>
+    </div>
+    
+<!--End About-->
+
+<!-- Popup -->
+<div id="popup" class="popup">
+<div class="popup-content">
+  <span class="close">&times;</span>
+  <img src="/img/IMG_20240320_121854.jpg" alt="Deskripsi gambar">
+  <p>Ayam Bakar Suharsih, kami bukan hanya sekadar restoran, tetapi kami adalah tempat untuk berkumpul, menikmati hidangan lezat, dan berbagi cerita. Kami selalu berusaha untuk menciptakan lingkungan yang hangat dan ramah, di mana para pelanggan kami merasa seperti di rumah sendiri.</p>
+</div>
+</div>
+<!-- End Popup -->
+
+    <!--Menu-->
+        <!--Makanan-->
+        <div class="container menu" id="menu">
+            <div class="menu-foods">
+              <h2>Makanan</h2>
+              <div class="card-tour" id="card-tour">
+                <div class="card-content card">
+                  <div class="image"><img
+                      src="/img/ayam bakar.webp" />
+                  </div>
+                  <h3>Ayam Bakar</h3>
+                  <p class="card-des">
+                    Ayam Bakar + Nasi + Lalapan
+                  </p>
+                  <p class="card__price">Rp 15.000</p>
+                  <div class="card-bottom">
+                    <button class="btn_card add-to-cart" data-id="1">Pesan</button>
+                      <a class="card-link" href="#"><i class="fa-solid fa-cart-shopping fa-beat"
+                        style="color: #000000;"></i></i></a>
+                  </div>
+                </div>
+        
+                <div class="card-content">
+                  <div class="image"><img src="/img/tempe bakar.jpg" /></div>
+                  <h3>Tempe Bakar</h3>
+                  <p class="card-des">Tempe Bakar isi 4</p>
+                  <p class="card__price">Rp 6.000</p>
+                  <div class="card-bottom">
+                    <button class="btn_card add-to-cart">Pesan</button>
+                    <a class="card-link" href="#"><i class="fa-solid fa-cart-shopping fa-beat"
+                      style="color: #000000;"></i></i></a>
+                  </div>
+                </div>
+        
+                  <div class="card-content">
+                    <div class="image"><img
+                        src="/img/sambal.png" />
+                    </div>
+                    <h3>Sambal</h3>
+                    <p class="card-des">
+                      Kurang Pedas? Nambah!
+                    </p>
+                    <p class="card__price">Rp 2.000</p>
+                    <div class="card-bottom">
+                      <a href="" target="_blank"
+                        class="btn_card add-to-cart" data-id="3">Pesan</a>
+                        <a class="card-link" href="#"><i class="fa-solid fa-cart-shopping fa-beat"
+                            style="color: #000000;"></i></i></a>
+                    </div>
+                  </div>
+        
+                  <div class="card-content">
+                    <div class="image"><img
+                        src="/img/29016_ayam-bakar-kuah-santan.jpg" />
+                    </div>
+                    <h3>Ayam Bakar Kuah</h3>
+                    <p class="card-des">
+                      Sensasi baru nikmati ayam bakar dengan kuah yang sangat enak
+                    </p>
+                    <p class="card__price">Rp. -</p>
+                    <p class="card-des">KOMING SUN</p>
+                  </div>
+        
+                  <div class="card-content">
+                    <div class="image"><img
+                        src="/img/ayam bakar goreng.jpg" />
+                    </div>
+                    <h3>Ayam Bakar Goreng</h3>
+                    <p class="card-des">
+                      Ayam bakar goreng di jamin koresteroll
+                    </p>
+                    <p class="card__price">Rp. -</p>
+                    <p class="card-des">KOMING SUN</p>
+                  </div>
+              </div>
+              <button class="btn btn-primary" onclick="switchMenu('drinks')">Lihat Menu Minuman</button>
+            </div>
+        <!--End Makanan-->
+
+        <!--Minuman-->
+        <div class="menu-drinks" style="display: none;">
+            <h2><b>Minuman</b></h2>
+            <div class="card-tour" id="card-tour">
+              <div class="card-content">
+                <div class="image"><img
+                    src="/img/esteh.jpg" />
+                </div>
+                <h3>Es Teh</h3>
+                <p class="card-des">
+                  Minumlah Es teh agar tenggorokan segar
+                </p>
+                <p class="card__price">Rp 4.000</p>
+                <div class="card-bottom">
+                  <a class="btn_card add-to-cart" data-id="4">Pesan</a>
+                    <a class="card-link" href="#"><i class="fa-solid fa-cart-shopping fa-beat"
+                      style="color: #000000;"></i></i></a>
+                </div>
+              </div>
+      
+              <div class="card-content">
+                  <div class="image"><img
+                      src="/img/teh hangat.jpeg"/>
+                  </div>
+                  <h3>Teh Hangat</h3>
+                  <p class="card-des">
+                    Hangatkan tubuhmu dengan minum teh hangat
+                  </p>
+                  <p class="card__price">Rp 3.000</p>
+                  <div class="card-bottom">
+                    <a href="" target="_blank"
+                      class="btn_card add-to-cart" data-id="5">Pesan</a>
+                      <a class="card-link" href="#"><i class="fa-solid fa-cart-shopping fa-beat"
+                          style="color: #000000;"></i></i></a>
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <div class="image"><img
+                      src="/img/es jeruk.jpg" />
+                  </div>
+                  <h3>Es Jeruk</h3>
+                  <p class="card-des">
+                    Pingin yang segar dan bervitamin? minumlah es jeruk!
+                  </p>
+                  <p class="card__price">Rp 4.000</p>
+                  <div class="card-bottom">
+                    <a href="" target="_blank"
+                      class="btn_card add-to-cart" data-id="6">Pesan</a>
+                      <a class="card-link" href="#"><i class="fa-solid fa-cart-shopping fa-beat"
+                          style="color: #000000;"></i></i></a>
+                  </div>
+                </div>
+      
+                <div class="card-content">
+                  <div class="image"><img
+                      src="/img/jeruk hangat.jpg" />
+                  </div>
+                  <h3>Jeruk Hangat</h3>
+                  <p class="card-des">
+                    Hangatkan tubuhmu dengan minuman jeruk bervitamin
+                  </p>
+                  <p class="card__price">Rp 3.000</p>
+                  <div class="card-bottom">
+                    <a href="" target="_blank"
+                      class="btn_card add-to-cart" data-id="7">Pesan</a>
+                      <a class="card-link" href="#"><i class="fa-solid fa-cart-shopping fa-beat"
+                          style="color: #000000;"></i></i></a>
+                  </div>
+                </div>
+      
+                <div class="card-content">
+                  <div class="image"><img
+                      src="/img/kelapa muda.jpeg" />
+                  </div>
+                  <h3>Es Degan</h3>
+                  <p class="card-des">
+                    Segarkan Tubuhmu dengan Es Degan yang kaya akan vitamin, ojo gawe mokel !!
+                  </p>
+                  <p class="card__price">Rp. -</p>
+                  <p class="card-des">KOMING SUN</p>
+                </div>
+      
+                <div class="card-content">
+                  <div class="image"><img
+                      src="/img/es kelapa muda.jpg" />
+                  </div>
+                  <h3>Degan Anget</h3>
+                  <p class="card-des">
+                    Hangatkan tubuhmu dengan degan anget, kaya vitamin, kaya raya...wahahahaha
+                  </p>
+                  <p class="card__price">Rp. -</p>
+                  <p class="card-des">KOMING SUN</p>
+                </div>
+            </div>
+            <button class="btn btn-primary" onclick="switchMenu('foods')">Lihat Menu Makanan</button>
+          </div>
+        </div>
+        <!--End Minuman-->
+    
+    <!--End Menu-->
+
+   <!--Gallery-->
+<div class="container" id="gallery">
+  <div class="gallery">
+    <h2 class="gallery-title">Gallery</h2>
+    <div class="row">
+      <div class="col-md-4 gallery-item">
+        <img src="/img/IMG-20240319-WA0038.jpg" alt="Image 1">
+      </div>
+      <div class="col-md-4 gallery-item">
+        <img src="/img/tempe bakar.jpg" alt="Image 2">
+      </div>
+      <div class="col-md-4 gallery-item">
+        <img src="/img/B300041-Cover-resep-ayam-bakar-scaled.png" alt="Image 3">
+      </div>
+      <div class="col-md-4 gallery-item">
+        <img src="/img/5fec5602f116e.jpg" alt="Image 4">
+      </div>
+      <div class="col-md-4 gallery-item">
+        <img src="/img/29016_ayam-bakar-kuah-santan.jpg" alt="Image 5">
+      </div>
+      <div class="col-md-4 gallery-item">
+        <img src="/img/c1b0f5178f2c484d19470a42bf993d8a.jpg" alt="Image 6">
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!--End Gallery-->
+
+    <!--Pesanan-->
+    <!--End Pesanan-->
+
+    <!--Testimoni-->
+    <div class="testimoni" id="testi">
+      <h2 class="text-center">Testimoni</h2>
+      <div class="row testimonial-slider">
+          <div class="col-md-4">
+              <div class="card">
+                  <div class="card-body text-center">
+                      <img src="/img/testimoni11.webp" class="rounded-circle img-thumbnail" alt="Foto Pelanggan" style="width: 100px; height: 100px;">
+                      <h5 class="card-title">Jill Valentine</h5>
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text">"Mantap ayam bakar nya bumbu nya terasa sampe kedalam daging nya best deh pokoknya"</p>
+                  </div>
+                  <div class="card-footer">
+                      <span class="text-muted">Rating:</span>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card">
+                  <div class="card-body text-center">
+                      <img src="/img/testimoni 2.webp" class="rounded-circle img-thumbnail" alt="Foto Pelanggan" style="width: 100px; height: 100px;">
+                      <h5 class="card-title">Leon S Kennedy</h5>
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text">"Sangat puas dengan pelayanan dan makanan yang disajikan. Akan kembali lagi!"</p>
+                  </div>
+                  <div class="card-footer">
+                      <span class="text-muted">Rating:</span>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card">
+                  <div class="card-body text-center">
+                      <img src="/img/testimoni 3.webp" class="rounded-circle img-thumbnail" alt="Foto Pelanggan" style="width: 100px; height: 100px;">
+                      <h5 class="card-title">Shiawase</h5>
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text">"Pelayanan sangat ramah, makanan lezat, dan harga terjangkau. Sangat direkomendasikan!"</p>
+                  </div>
+                  <div class="card-footer">
+                      <span class="text-muted">Rating:</span>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!--End Testimoni-->
+
+    <!--FaQ-->
+    <section id="faq" class="py-5 bg-light">
+      <div class="container-fluid"
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 mb-4 col-12">
+            <img
+              src="/img/4791.png_860.png"
+              class="img-fluid"
+              alt="FAQ Image"
+            />
+          </div>
+          <div class="col-xl-6 mb-4 col-12 col-lg-6">
+            <h2 class="col mb-4">FAQ?</h2>
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Dimana Lokasi Ayamn Bakar Suharsih?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Ayam Bakar Suharsih berada di Jl Telogo Mulyo No 1
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Sudah Buka Cabang Atau Belum?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Ayam Bakar Suharsih belum buka cabang
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Buka Pukul Berapa Ayam Bakar Suharsih?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Ayam Bakar Suharsih mulai buka pada pukul Pagi 13.00-21.30 Malam
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Menerima Pesanan Katering?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Tentu menerima pesanan Katering untuk daerah semarang
+                  </div>
+                </div>
+              </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+    <!--End FaQ-->
+
+    <!--Contact-->
+      <div class="container mt-5" id="contact">
+      <h2 class="judul">Contact Us</h2>
+      <div class="row">
+          <div class="col-md-6 contact-form">
+              <h2 class="text-center mb-4 title-text">Form Pesan</h2>
+              <form>
+                <div class="form-group">
+                  <label for="name" class="contact-label">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Masukan Nama">
+              </div>
+              <div class="form-group">
+                  <label for="alamat" class="contact-label title-text">Alamat</label>
+                  <input type="text" class="form-control" id="alamat" placeholder="Masukan Alamat">
+              </div>
+              <div class="form-group">
+                  <label for="Phone" class="contact-label title-text">No Hp</label>
+                  <input type="text" class="form-control" id="Phone" placeholder="Masukan No Hp">
+              </div>
+              <div class="form-group">
+                  <label for="message" class="contact-label title-text">Deskripsi(Pesanan)</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Masukan Deskripsi Makanan"></textarea>
+              </div>
+              <button type="button" class="btn btn-primary" onclick="redirectToWhatsApp()">Pesan</button>
+              </form>
+          </div>
+          <br>
+          <br>
+          <div class="col-md-6 contact-info text-center"> 
+              <h4 class="mb-4">Contact Information</h4>
+              <p class="contact-info-text"><strong>Open Resto: </strong> Senin - Jumat: 13.00 - 21.30</p>
+              <p class="contact-info-text"><strong>No Wa: </strong>0895-3841-88781</p>
+              
+              <div class="d-flex align-items-start gap-3">
+                  <i class="bi bi-geo-alt-fill color-secondary"></i>
+                </span>
+                <div class="contact-loc">
+                  <h5 class="fw-bold">LOKASI</h5>
+                  <p class="fs-7">Jl. Tlogo Timun Raya No.1 Tlogosari Kulon, Kec. Pedurungan, Kota Semarang, Jawa Tengah 50196
+                  </p>
+                  <iframe class="w-100" height="250px"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4709.464402120661!2d110.45885176276505!3d-6.989042938773463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708cc34e6550af%3A0x726086e0cb343a01!2sJl.%20Tlogotimun%20No.1%2C%20Tlogosari%20Kulon%2C%20Kec.%20Pedurungan%2C%20Kota%20Semarang%2C%20Jawa%20Tengah%2050196!5e0!3m2!1sid!2sid!4v1712149033492!5m2!1sid!2sid"
+                    style="border-radius: 10px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    <!--End Contact-->
+
+<!-- Footer -->
+<footer class="body">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4">
+              <h5>Ayam Bakar Suharsih</h5>
+              <p>Di sini Anda dapat menemukan ayam bakar yang lezat dan nikmat.</p>
+          </div>
+          <div class="col-md-4 text-center">
+              <h5>Follow Us</h5>
+              <ul class="social">
+                  <li><a href="https://www.instagram.com/ayambakarsuharsih?igsh=aDBsZjJncjZyaXV4" target="_blank" class="text-white"><i class="fab fa-instagram"></i> Instagram</a></li>
+                  <li><a href="https://wa.me/62895384188781" target="_blank" class="text-white"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+              </ul>
+          </div>
+          <div class="col-md-4">
+              <h5>INFO KAMI</h5>
+              <address>
+                  Jl. Tlogo Timun Raya No.1 Tlogosari Kulon<br>
+                  Kec. Pedurungan, Kota Semarang, Jawa Tengah 50196<br>
+                  Phone: 0895-3841-88781<br>
+              </address>
+          </div>
+      </div>
+      <!-- Copyright text -->
+      <div class="row">
+          <div class="col text-center">
+              <small class="footer-copyright">&copy; 2024 Ayam Bakar Suharsih.</small>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+
+<!-- End Footer -->
+    <!--Js-->
+    <script src="/script/script.js"></script>
+    <script src="/script/pesanan.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
